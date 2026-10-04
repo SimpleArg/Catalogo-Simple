@@ -4,12 +4,12 @@
 // Estos valores NO son secretos: la seguridad real está en firestore.rules.
 // ─────────────────────────────────────────────────────────────
 export const firebaseConfig = {
-  apiKey: "PEGAR_AQUI",
-  authDomain: "PEGAR_AQUI.firebaseapp.com",
-  projectId: "PEGAR_AQUI",
-  storageBucket: "PEGAR_AQUI.appspot.com", // no se usa (las imágenes están en el repo)
-  messagingSenderId: "PEGAR_AQUI",
-  appId: "PEGAR_AQUI"
+  apiKey: "AIzaSyAXT7FmKCtzeRusx5i8NIYGiQAFey3Vsdw",
+    authDomain: "catalogo-3eacb.firebaseapp.com",
+    projectId: "catalogo-3eacb",
+    storageBucket: "catalogo-3eacb.firebasestorage.app",
+    messagingSenderId: "422329615022",
+    appId: "1:422329615022:web:1a19f806a15f2a18b2a33f"
 };
 
 // Datos de la tienda en un solo lugar
