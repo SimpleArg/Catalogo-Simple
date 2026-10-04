@@ -4,13 +4,14 @@
 // Estos valores NO son secretos: la seguridad real está en firestore.rules.
 // ─────────────────────────────────────────────────────────────
 export const firebaseConfig = {
-  apiKey: "AIzaSyAXT7FmKCtzeRusx5i8NIYGiQAFey3Vsdw",
-    authDomain: "catalogo-3eacb.firebaseapp.com",
-    projectId: "catalogo-3eacb",
-    storageBucket: "catalogo-3eacb.firebasestorage.app",
-    messagingSenderId: "422329615022",
-    appId: "1:422329615022:web:1a19f806a15f2a18b2a33f"
+  apiKey: "AIzaSyAXT7FmKCtzeRusx5i8NIYGiQAFey3Vsdw", // Tu API Key de Firebase
+  authDomain: "catalogo-3eacb.firebaseapp.com",
+  projectId: "catalogo-3eacb",
+  storageBucket: "catalogo-3eacb.firebasestorage.app", // También puede ser "catalogo-3eacb.appspot.com"
+  messagingSenderId: "422329615022",
+  appId: "1:422329615022:web:1a19f806a15f2a18b2a33f"
 };
+
 
 // Datos de la tienda en un solo lugar
 export const STORE = {
