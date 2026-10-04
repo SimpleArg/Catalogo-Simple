@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ► Reemplazá por el email del usuario admin creado en Firebase Authentication.
+    function isAdmin() {
+      return request.auth != null
+          && request.auth.token.email == 'TU_EMAIL_ADMIN@gmail.com';
+    }
+
+    // Productos y promos: el público solo lee los visibles; el admin lee y escribe todo.
+    match /products/{id} {
+      allow read: if resource.data.visible == true || isAdmin();
+      allow write: if isAdmin();
+    }
+    match /promos/{id} {
+      allow read: if resource.data.visible == true || isAdmin();
+      allow write: if isAdmin();
+    }
+  }
+}
